@@ -12,13 +12,13 @@ int _printf(const char *format, ...)
 	int i = 0, printed_count = 0, len, number_holder;
 	char *ptr;
 	char ctr;
+	va_list list_arg;
 
 	if (format == NULL)
 	{
 		return (-1);
 	}
 
-	va_list list_arg;
 
 	va_start(list_arg, format);
 
