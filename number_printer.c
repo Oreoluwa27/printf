@@ -2,7 +2,7 @@
 
 /**
  * print_integer - print an int to stdio
- * @n: the int
+ * @i: the int
  * Return: number of chars
  */
 int number_printer(int i)
@@ -24,7 +24,7 @@ int number_printer(int i)
 	{
 		iteration += number_printer(num / 10);
 	}
-	
+
 	iteration += char_print((num % 10) + '0');
 	return (iteration);
 }
